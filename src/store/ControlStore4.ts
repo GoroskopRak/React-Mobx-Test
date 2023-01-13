@@ -1,5 +1,5 @@
 import { observable, action } from "mobx";
-import { getCountryByName, CountryInfo } from "../api/apiService";
+import { getCountryByName} from "../api/apiService";
 import { Types } from "./ControlStore3";
 
 const controlStore4: Types = observable({

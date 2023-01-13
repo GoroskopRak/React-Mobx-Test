@@ -22,14 +22,11 @@ li {
 }
 
 .ul-suggestion {
-  background-color: azure;
-  border: 1px solid black;
   padding: 0;
 }
 
 .ul-suggestion-li {
   height: 40px;
-  border: 1px solid black;
   padding: 5px 0 0 5px;
   cursor: pointer;
 }

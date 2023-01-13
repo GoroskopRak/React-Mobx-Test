@@ -4,13 +4,13 @@ import { controlStore } from "../store/ControlStore2";
 
 const Control2 = observer(() => {
   return (
-    <div style={{ margin: "5px 10px"}}>
+    <div className="p-3 border bg-light">
 
-      <input style={{ margin: "0 10px" }} type="button" value="Alert if number" onClick={controlStore.alertIfNumber} />
+      <input className="btn btn-dark m-2"  type="button" value="Alert if number" onClick={controlStore.alertIfNumber} />
       
-      <span style={{ margin: "0 10px", border: "1px solid black" }}>{controlStore.text}</span>
+      <span className="p-2 border bg-light">{controlStore.text}</span>
 
-      <input style={{ margin: "0 10px" }} type="button" value="Alert" onClick={controlStore.alert} />
+      <input className="btn btn-dark m-2" type="button" value="Alert" onClick={controlStore.alert} />
 
     </div>
   );
