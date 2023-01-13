@@ -8,7 +8,7 @@ const Control2 = observer(() => {
 
       <input className="btn btn-dark m-2"  type="button" value="Alert if number" onClick={controlStore.alertIfNumber} />
       
-      <span className="p-2 border bg-light">{controlStore.text}</span>
+      <input type="text" value={controlStore.text} onChange={e =>controlStore.change(e)} className="p-2 border"/>
 
       <input className="btn btn-dark m-2" type="button" value="Alert" onClick={controlStore.alert} />
 

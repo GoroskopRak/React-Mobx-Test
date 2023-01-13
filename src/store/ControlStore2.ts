@@ -8,6 +8,9 @@ const controlStore = observable({
         alert(controlStore.text[firstNumber]);
     }
   }),
+  change: action((e: {target: {value: string}}) => {
+    controlStore.text = e.target.value;
+  }),
   alert: action(() => {
     alert(controlStore.text);
   })

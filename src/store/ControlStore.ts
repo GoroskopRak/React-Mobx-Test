@@ -7,6 +7,9 @@ const controlStore = observable({
   printHello: action(() => {
     controlStore.text='Hello World!';
   }),
+  change: action((e: {target: {value: string}}) => {
+    controlStore.text = e.target.value;
+  }),
   reset: action(() => {
     controlStore.text='';
   })

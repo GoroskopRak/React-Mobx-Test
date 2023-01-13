@@ -5,7 +5,7 @@ import { Types } from "./ControlStore3";
 const controlStore4: Types = observable({
   text: '',
   suggestions: [],
-  change: action((e: any) => {
+  change: action((e: {target: {value: string}}) => {
     controlStore4.text = e.target.value;
     getCountryByName(controlStore4.text).then(result => controlStore4.suggestions = result);
   }),

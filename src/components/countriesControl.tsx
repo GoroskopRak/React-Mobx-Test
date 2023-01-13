@@ -8,13 +8,14 @@ const Control3 = observer((props: { maxSuggestions: number | undefined; controlS
 
     return (
     <div style={{ margin: "5px 10px"}}>
-            <input type="text" className="search-suggestion" value={controlStore.text} onChange={e =>controlStore.change(e)}/>
+            <input type="text" className="search-suggestion p-2 border" value={controlStore.text} onChange={e =>controlStore.change(e)}/>
             
             <div>
                 <ul className='ul-suggestion border bg-light'>
                     {controlStore.suggestions.slice(0,maxSuggestions).map(suggestion => (
                         <li className='ul-suggestion-li border bg-light'
                         onClick={() => controlStore.text = `${suggestion.name}, ${suggestion.fullName}`}
+                        key={suggestion.fullName}
                         >
                         <div>
                             {suggestion.name}, &nbsp;

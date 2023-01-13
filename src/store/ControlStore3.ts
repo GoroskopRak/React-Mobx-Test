@@ -10,7 +10,7 @@ interface Types {
 const controlStore3: Types = observable({
   text: '',
   suggestions: [],
-  change: action((e: any) => {
+  change: action((e: {target: {value: string}}) => {
     controlStore3.text = e.target.value;
     getCountryByName(controlStore3.text).then(result => controlStore3.suggestions = result);
   }),
