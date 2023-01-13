@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import { Types } from "../store/ControlStore3";
 
 
-const CountriesControl = observer((props: { maxSuggestions: number | undefined; controlStore: Types}) => {
+const CountriesControl = observer((props: { maxSuggestions: number ; controlStore: Types}) => {
     const {maxSuggestions, controlStore} = props;
 
     return (
