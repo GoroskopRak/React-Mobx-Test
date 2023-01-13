@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 import { Types } from "../store/ControlStore3";
 
 
-const Control3 = observer((props: { maxSuggestions: number | undefined; controlStore: Types}) => {
+const CountriesControl = observer((props: { maxSuggestions: number | undefined; controlStore: Types}) => {
     const {maxSuggestions, controlStore} = props;
 
     return (
@@ -31,4 +31,4 @@ const Control3 = observer((props: { maxSuggestions: number | undefined; controlS
   );
 });
 
-export default Control3;
+export default CountriesControl;
